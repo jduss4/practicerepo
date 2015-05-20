@@ -5,7 +5,8 @@ array.each do |item|
 end
 
 hash = Hash.new()
-array.each_with_index do |item, index|
+array.each_with_index(1) do |item, index|
+  puts "Current index is #{index}"
   hash[index] = item
 end
 
